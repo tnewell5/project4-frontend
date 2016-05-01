@@ -5,12 +5,14 @@
   "main": "webpack.config.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack-dev-server --progress --inline --hot"
+    "start-dev": "webpack-dev-server --progress --inline --hot",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.9.1",
+    "express": "^4.13.4",
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "react-router": "^2.0.1"
