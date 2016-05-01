@@ -10,8 +10,9 @@ const Home = React.createClass({
     return(
       <div>
         <h1 className="title-box">Climb On!</h1>
-        <Link to="/yes"><button onClick={this.clickConfirm}>Yes</button></Link>
-        <Link to="/no"><button onClick={this.clickConfirm}>No</button></Link>
+        <h3>What to learn how to climb?</h3>
+        <Link to="/yes"><button onClick={this.clickConfirm}>Sure!</button></Link>
+        <Link to="/no"><button onClick={this.clickConfirm}>Not really</button></Link>
       </div>
     )
   }
