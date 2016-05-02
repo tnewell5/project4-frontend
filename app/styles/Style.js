@@ -7,7 +7,12 @@ const Style = {
   img: {
     height: '100px',
     width: '100px'
-  }
+  },
+
+  // iframe {
+  //   height: '100px',
+  //   width: '100px'
+  // }
 
   // ul: {
   //   listStyleType: 'none'
