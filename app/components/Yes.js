@@ -4,6 +4,7 @@ import { Parallax, Background } from 'react-parallax';
 import ParallaxComponent from 'react-parallax-component';
 import Equipment from './Equipment';
 import How from './How';
+import Where from './Where';
 //import {Background} from 'react-materialize';
 
 const Yes = React.createClass({
@@ -15,6 +16,7 @@ const Yes = React.createClass({
 
     return(
       <div>
+        <Where />
         <How />
         <Equipment />
         <br/><br/>
