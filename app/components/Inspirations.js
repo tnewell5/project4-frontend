@@ -13,7 +13,8 @@ const Inspirations = React.createClass({
   componentDidMount: function() {
     console.log("get all videos!");
 
-    var url = "https://0.0.0.0:3000/videos.json";
+    //var url = "https://0.0.0.0:3000/videos.json";
+    var url = "https://project4-backend.herokuapp.com/videos.json"
     console.log('this url gets sent to backend:', url);
     axios.get(url)
     .then(function(response){
