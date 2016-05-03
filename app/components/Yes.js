@@ -6,6 +6,7 @@ import Equipment from './Equipment';
 import How from './How';
 import Where from './Where';
 import Inspirations from './Inspirations';
+import Resources from './Resources';
 //import {Background} from 'react-materialize';
 
 const Yes = React.createClass({
@@ -17,6 +18,7 @@ const Yes = React.createClass({
 
     return(
       <div>
+        <Resources />
         <Inspirations />
         <Where />
         <How />

@@ -14,6 +14,7 @@ const Inspirations = React.createClass({
     console.log("get all videos!");
 
     var url = "http://0.0.0.0:3000/videos.json";
+    console.log('this url gets sent to backend:', url);
     axios.get(url)
     .then(function(response){
       console.log("Response.data:", response.data.videos[0].link);
