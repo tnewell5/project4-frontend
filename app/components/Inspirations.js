@@ -5,20 +5,20 @@ import axios from 'axios';
 const Inspirations = React.createClass({
   getInitialState: function() {
     return {
-      ajaxReturn: []
+      //ajaxReturn: []
+      ajaxReturn: ''
     };
   },
 
   componentDidMount: function() {
     console.log("get all videos!");
 
-    //AjaxHelper.getAllRecipes()
     var url = "http://0.0.0.0:3000/videos.json";
     axios.get(url)
     .then(function(response){
-      console.log("Response.data:", response.data.videos);
+      console.log("Response.data:", response.data.videos[0].link);
       this.setState({
-        ajaxReturn: response.data.videos
+        ajaxReturn: response.data.videos[0].link
       });
     }.bind(this))
     .catch(function(err){
@@ -28,10 +28,11 @@ const Inspirations = React.createClass({
   },
 
   render: function(){
+    window.setTimeout(function(){scrollBy(0, window.innerHeight)}, 2000);
     return(
       <div>
         <h4>Inspirations</h4>
-        <iframe width="428" height="240" src="https://www.youtube.com/embed/l8fVyqWYB-Y" frameBorder="0" allowFullScreen>
+        <iframe width="428" height="240" src={this.state.ajaxReturn} frameBorder="0" allowFullScreen>
         </iframe>
 
         <br/>
