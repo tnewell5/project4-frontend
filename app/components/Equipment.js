@@ -4,7 +4,7 @@ import Style from '../styles/Style';
 const Equipment = React.createClass({
   render: function(){
     return(
-      <div>
+      <div className='equipment'>
         <h4>What equipment do I need?</h4>
         <a href={"http://www.ems.com/search?q=climbing%20shoes"} target="blank">
           <img style={Style.img} src="/app/images/climbing-shoes.jpg" />
