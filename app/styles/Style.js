@@ -1,25 +1,17 @@
 const Style = {
-  // backgroundColor: 'lightpink'
   textAlign: 'center',
   fontFamily: 'Rockwell',
   fontSize: '18px',
 
   img: {
-    height: '100px',
-    width: '100px'
-  },
+    height: '150px',
+    width: '150px'
+  }
 
-  // iframe {
-  //   height: '100px',
-  //   width: '100px'
+  // h4: {
+  //   margin: '0px'
   // }
 
-  // ul: {
-  //   listStyleType: 'none'
-  // },
-  // input: {
-  //   width: '200px'
-  // }
 }
 
 export default Style;

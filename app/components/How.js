@@ -4,7 +4,7 @@ import Style from '../styles/Style';
 const How = React.createClass({
   render: function(){
     return(
-      <div>
+      <div className='equipment'>
         <h4>How do I climb?</h4>
           <img style={Style.img} src="/app/images/climb2.jpg" />
           <br/>

@@ -7,6 +7,7 @@ import How from './How';
 import Where from './Where';
 import Inspirations from './Inspirations';
 import Resources from './Resources';
+import Style from '../styles/Style.js';
 //import {Background} from 'react-materialize';
 
 const Yes = React.createClass({
@@ -17,13 +18,27 @@ const Yes = React.createClass({
     window.setTimeout(function(){scrollBy(0, window.innerHeight)}, 0);
 
     return(
-      <div>
+      <div style={Style}>
         <Resources />
+        <div className="image-div">
+          <img className='background-image' src="/app/images/climb1.jpg" />
+        </div>
         <Inspirations />
+        <div className="image-div">
+          <img className='background-image' src="/app/images/climb1.jpg" />
+        </div>
         <Where />
+        <div className="image-div">
+          <img className='background-image' src="/app/images/climb1.jpg" />
+        </div>
         <How />
+        <div className="image-div">
+          <img className='background-image' src="/app/images/climb1.jpg" />
+        </div>
         <Equipment />
-        <br/><br/>
+        <div className="image-div">
+          <img className='background-image' src="/app/images/climb1.jpg" />
+        </div>
         <h4>Great! Start Climbing!</h4>
 
       </div>

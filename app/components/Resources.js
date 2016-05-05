@@ -4,7 +4,7 @@ import Style from '../styles/Style';
 const Resources = React.createClass({
   render: function(){
     return(
-      <div>
+      <div className='equipment'>
         <h4>Resources</h4>
         <a href={"https://reelrocktour.com/"} target="blank">Climbing Films</a>
         <br/><br/>

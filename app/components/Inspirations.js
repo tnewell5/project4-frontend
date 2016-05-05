@@ -32,7 +32,7 @@ const Inspirations = React.createClass({
   render: function(){
     window.setTimeout(function(){scrollBy(0, window.innerHeight)}, 2000);
     return(
-      <div>
+      <div className='equipment'>
         <h4>Inspirations</h4>
         <iframe width="428" height="240" src={this.state.ajaxReturn} frameBorder="0" allowFullScreen>
         </iframe>

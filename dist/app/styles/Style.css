@@ -1,0 +1,49 @@
+.equipment {
+  height: 50vh;
+  width: 100%;
+  /*background: #F8F8F8;*/
+  background: white;
+}
+
+.equipment-images {
+  position: relative;
+  top: 20%;
+}
+
+.equipment-link {
+  padding-right: 20px;
+}
+
+.image-div {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+}
+
+.search-input {
+  width: 200px !important;
+  height: 23px !important;
+  margin: 0 !important;
+  background-color: lightgray !important;
+}
+
+h4 {
+  margin: 0 !important;
+  background: white !important;
+  position: relative;
+  top: 10%;
+}
+
+.entry-text {
+  vertical-align: middle;
+}
+
+/*.page-header {
+  font-size: 2.28rem;
+  margin: 0;
+}*/
+/*html,body {padding:0; margin:0;}*/
