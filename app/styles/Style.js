@@ -5,7 +5,9 @@ const Style = {
 
   img: {
     height: '150px',
-    width: '150px'
+    width: '150px',
+    // paddingRight: '20px'
+    marginLeft: '20px'
   }
 
   // h4: {

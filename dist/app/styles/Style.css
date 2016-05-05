@@ -12,6 +12,14 @@
   /*margin-right: 10px;*/
 }
 
+.modal-button {
+  width: 150px !important;
+  margin-left: 20px !important;
+  background-color: #505050 !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  font-size: 15px !important;
+}
 /*.equipment-link {
   padding-right: 20px;
 }*/
@@ -44,13 +52,7 @@ h4 {
   vertical-align: middle;
 }
 
-.modal-button {
-  margin-left: 25px !important;
-  background-color: #505050 !important;
-  padding-right: 10px !important;
-  padding-left: 10px !important;
-  font-size: 15px !important;
-}
+
 
 /*.page-header {
   font-size: 2.28rem;
