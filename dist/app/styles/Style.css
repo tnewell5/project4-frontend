@@ -8,11 +8,13 @@
 .equipment-images {
   position: relative;
   top: 20%;
+  padding-right: 20px !important;
+  /*margin-right: 10px;*/
 }
 
-.equipment-link {
+/*.equipment-link {
   padding-right: 20px;
-}
+}*/
 
 .image-div {
   width: 100%;
@@ -40,6 +42,14 @@ h4 {
 
 .entry-text {
   vertical-align: middle;
+}
+
+.modal-button {
+  margin-left: 25px !important;
+  background-color: #505050 !important;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+  font-size: 15px !important;
 }
 
 /*.page-header {
