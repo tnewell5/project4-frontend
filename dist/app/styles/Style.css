@@ -8,7 +8,7 @@
 .equipment-images {
   position: relative;
   top: 20%;
-  padding-right: 20px !important;
+
   /*margin-right: 10px;*/
 }
 
@@ -19,6 +19,11 @@
   padding-right: 10px !important;
   padding-left: 10px !important;
   font-size: 15px !important;
+}
+
+.modal-button:hover {
+  width: 160px !important;
+  height: 40px !important;
 }
 /*.equipment-link {
   padding-right: 20px;
@@ -41,6 +46,10 @@
   background-color: lightgray !important;
 }
 
+.search-button {
+  background-color: #505050 !important;
+}
+
 h4 {
   margin: 0 !important;
   background: white !important;
@@ -52,7 +61,20 @@ h4 {
   vertical-align: middle;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 318.5px;
 
+}
+.youtube-video {
+  width: 50%;
+}
+
+.resources-links {
+  width: 50%;
+}
 
 /*.page-header {
   font-size: 2.28rem;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Style from '../styles/Style';
 import axios from 'axios';
+import {MediaBox} from 'react-materialize';
 
 const Inspirations = React.createClass({
   getInitialState: function() {
@@ -33,15 +34,22 @@ const Inspirations = React.createClass({
     window.setTimeout(function(){scrollBy(0, window.innerHeight)}, 2000);
     return(
       <div className='equipment'>
-        <h4>Inspirations</h4>
-        <iframe width="428" height="240" src={this.state.ajaxReturn} frameBorder="0" allowFullScreen>
-        </iframe>
-
-        <br/>
-
-
-          <br/>
-          <br/>
+        <h4>Inspirations/ Resources</h4>
+        <div className='flex-container'>
+          <div className='youtube-video'>
+            <iframe width="285" height="160" src={this.state.ajaxReturn} frameBorder="0" allowFullScreen>
+            </iframe>
+          </div>
+          <div className='resources-links'>
+            <a href={"https://reelrocktour.com/"} target="blank">Climbing Films</a>
+            <br/><br/>
+            <a href={"https://en.wikipedia.org/wiki/Grade_(climbing)"} target="blank">Climbing Rating System</a>
+            <br/><br/>
+            <a href={"http://www.climbing.com/people/doctor-of-climbology-33-must-read-climbing-books/"} target="blank">Climbing Books</a>
+            <br/><br/>
+            <a href={"http://www.meetup.com/topics/rockclimbing/"} target="blank">Climbing Meetups</a>
+          </div>
+        </div>
       </div>
     );
   }
