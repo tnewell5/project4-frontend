@@ -10,8 +10,9 @@ const Style = {
     marginLeft: '20px'
   }
 
-  // h4: {
-  //   margin: '0px'
+  // a: {
+  //   color: '#505050',
+  //   fontSize: '20px'
   // }
 
 }
