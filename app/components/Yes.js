@@ -12,10 +12,11 @@ import Style from '../styles/Style.js';
 
 const Yes = React.createClass({
   render: function(){
-    var Styling = {
-      color: 'blue'
-    };
-    window.setTimeout(function(){scrollBy(0, window.innerHeight)}, 0);
+    // var Styling = {
+    //   color: 'blue'
+    // };
+    // window.setTimeout(function(){scrollBy(0, window.innerHeight)}, 2000);
+    window.setTimeout(function(){scrollBy(0, 2889)}, 0);
 
     return(
       <div style={Style}>
