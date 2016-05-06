@@ -37,7 +37,7 @@ const Inspirations = React.createClass({
         <h4>Inspirations and Resources</h4>
         <div className='flex-container'>
           <div className='youtube-video'>
-            <iframe width="357" height="200" src={this.state.ajaxReturn} frameBorder="0" allowFullScreen>
+            <iframe className='video' width="357" height="200" src={this.state.ajaxReturn} frameBorder="0" allowFullScreen>
             </iframe>
           </div>
           <div className='resources-links'>

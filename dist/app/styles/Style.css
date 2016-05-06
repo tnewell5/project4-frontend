@@ -79,10 +79,16 @@ h4 {
   flex-direction: column;
 }
 
+.link:hover {
+  color: #00CCFF !important;
+  font-size: 22px !important;
+}
+
 .link {
   color: #505050 !important;
   font-size: 20px !important;
 }
+
 
 /*.page-header {
   font-size: 2.28rem;
