@@ -8,16 +8,9 @@ const How = React.createClass({
       <div className='equipment'>
         <h4>How do I climb?</h4>
         <div className='equipment-images'>
-          <img style={Style.img} src="/app/images/climbOn6.jpg" />
+          <img className='center-image' src="/app/images/climbOn6.jpg" />
           <br/>
-          <Modal
-            header='How to Rock Climb'
-            trigger={
-              <Button className='modal-button' waves='light'>Step-By-Step</Button>
-            }>
-            <iframe width="900" height="300" src={"http://www.wikihow.com/Rock-Climb"} frameBorder="0" allowFullScreen>MODAL
-            </iframe>
-          </Modal>
+          <a className='link' href={"http://www.wikihow.com/Rock-Climb"} target="blank">Step-By-Step</a>
         </div>
       </div>
     );

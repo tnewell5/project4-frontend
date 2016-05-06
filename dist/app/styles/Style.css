@@ -89,6 +89,32 @@ h4 {
   font-size: 20px !important;
 }
 
+.center-image {
+  height: 150px;
+  width: 150px;
+}
+
+.entry-button {
+  margin: 10px;
+
+}
+
+.entry-div {
+  position: relative;
+  top: 50vh;
+}
+
+.entry-page {
+  background-image: url("../images/climbOn2.jpg");
+  background-size: 100%;
+  height: 400px;
+}
+
+h3 {
+  color: white !important;
+  margin: 0 !important;
+}
+
 
 /*.page-header {
   font-size: 2.28rem;

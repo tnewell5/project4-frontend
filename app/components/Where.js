@@ -8,7 +8,7 @@ const Where = React.createClass({
       <div className='equipment'>
         <h4>Where do I climb?</h4>
         <div className='equipment-images'>
-          <img style={Style.img} src="/app/images/climbOn7.jpg" />
+          <img className='center-image' src="/app/images/climbOn7.jpg" />
         </div>
         <br/><br/>
           <form action="https://maps.google.com/maps" method="get" target="_blank">

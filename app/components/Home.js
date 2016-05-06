@@ -8,13 +8,15 @@ const Home = React.createClass({
   },
   render: function(){
     return(
-      <div>
-        <h1 className="title-box">Climb On!</h1>
-        <div>
+      <div className='entry-page'>
+        <h3 className="title-box">Climb On!</h3>
+        <br/>
+        <div className='entry-div'>
           <h4 className='entry-text'>Want to learn how to climb?</h4>
+          <br/>
+          <Link to="/no"><button className='entry-button' onClick={this.clickConfirm}>Not really</button></Link>
+          <Link to="/yes"><button className='entry-button' onClick={this.clickConfirm}>Sure!</button></Link>
         </div>
-        <Link to="/no"><button onClick={this.clickConfirm}>Not really</button></Link>
-        <Link to="/yes"><button onClick={this.clickConfirm}>Sure!</button></Link>
       </div>
     )
   }
