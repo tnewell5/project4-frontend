@@ -8,33 +8,26 @@ import Where from './Where';
 import Inspirations from './Inspirations';
 import Style from '../styles/Style.js';
 import Parallax1 from './Parallax1';
+import Parallax2 from './Parallax2';
+import Parallax3 from './Parallax3';
+import Parallax4 from './Parallax4';
+import Parallax5 from './Parallax5';
 
 
 const Yes = React.createClass({
   render: function(){
-    // var Styling = {
-    //   color: 'blue'
-    // };
     // window.setTimeout(function(){scrollBy(0, window.innerHeight)}, 2000);
     window.setTimeout(function(){scrollBy(0, 2889)}, 0);
 
     return(
       <div style={Style}>
-        <div className="image-div">
-          <img className='background-image' src="/app/images/climbOn2.jpg" />
-        </div>
+        <Parallax5 />
         <Inspirations />
-        <div className="image-div">
-          <img className='background-image' src="/app/images/climbOn3.jpg" />
-        </div>
+        <Parallax4 />
         <Where />
-        <div className="image-div">
-          <img className='background-image' src="/app/images/climbOn4.jpg" />
-        </div>
+        <Parallax3 />
         <How />
-        <div className="image-div">
-          <img className='background-image' src="/app/images/climbOn5.jpg" />
-        </div>
+        <Parallax2 />
         <Equipment />
         <Parallax1 />
       </div>
