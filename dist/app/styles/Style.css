@@ -134,6 +134,26 @@ h3 {
   top: 80vh;
 }
 
+.react-parallax-bgimage {
+  position: relative !important;
+  padding-top: 15% !important;
+}
+
+.react-parallax-content {
+  position: absolute !important;
+  top: 5% !important;
+  width: 100vw !important;
+  text-align: center !important;
+}
+
+.h-tag {
+  position: absolute;
+  top: 0%;
+  text-align: center;
+  width: 100vw;
+  color: white !important;
+  text-shadow: 2px 2px #505050 !important;
+}
 
 /*.page-header {
   font-size: 2.28rem;

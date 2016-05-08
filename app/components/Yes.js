@@ -6,9 +6,9 @@ import Equipment from './Equipment';
 import How from './How';
 import Where from './Where';
 import Inspirations from './Inspirations';
-// import Resources from './Resources';
 import Style from '../styles/Style.js';
-//import {Background} from 'react-materialize';
+import Parallax1 from './Parallax1';
+
 
 const Yes = React.createClass({
   render: function(){
@@ -36,9 +36,7 @@ const Yes = React.createClass({
           <img className='background-image' src="/app/images/climbOn5.jpg" />
         </div>
         <Equipment />
-        <div className="image-div">
-          <img className='background-image' src="/app/images/climbOn1.jpg" />
-        </div>
+        <Parallax1 />
       </div>
     );
   }
