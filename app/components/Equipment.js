@@ -5,13 +5,27 @@ import {Button, Modal} from 'react-materialize';
 const Equipment = React.createClass({
   getInitialState: function(){
     return {
-      shoesSrc: ''
+      shoesSrc: '',
+      harnessSrc: '',
+      chalkSrc: ''
     };
   },
   onShoeClick: function(){
     console.log('onShoeClick was called!');
     this.setState({
       shoesSrc: "https://www.ems.com/search?q=climbing%20shoes"
+    });
+  },
+  onHarnessClick: function(){
+    console.log('onHarnessClick was called!');
+    this.setState({
+      harnessSrc: "https://www.ems.com/climb/rock-climbing/harnesses/"
+    });
+  },
+  onChalkClick: function(){
+    console.log('onChalkClick was called!');
+    this.setState({
+      chalkSrc: "https://www.ems.com/climb/rock-climbing/chalk-bags-and-chalk/"
     });
   },
   render: function(){
@@ -27,28 +41,35 @@ const Equipment = React.createClass({
             <Modal
               header='Climbing Shoes'
               trigger={
-                <Button className='modal-button' waves='light'  >Shoes</Button>
+                <Button className='modal-button' waves='light'>Shoes</Button>
               }>
               <iframe width="700" height="300" src={this.state.shoesSrc} frameBorder="0" allowFullScreen>MODAL
               </iframe>
             </Modal>
           </span>
-          <Modal
-            header='Chalk Bags'
-            trigger={
-              <Button className='modal-button' waves='light'>Chalk Bag</Button>
-            }>
-            <iframe width="700" height="300" src={"https://www.ems.com/climb/rock-climbing/chalk-bags-and-chalk/"} frameBorder="0" allowFullScreen>MODAL
-            </iframe>
-          </Modal>
-          <Modal
-            header='Climbing Harnesses'
-            trigger={
-              <Button className='modal-button' waves='light'>Harness</Button>
-            }>
-            <iframe width="700" height="300" src={"https://www.ems.com/climb/rock-climbing/harnesses/"} frameBorder="0" allowFullScreen>MODAL
-            </iframe>
-          </Modal>
+
+          <span onClick={this.onChalkClick}>
+            <Modal
+              header='Chalk Bags'
+              trigger={
+                <Button className='modal-button' waves='light'>Chalk Bag</Button>
+              }>
+              <iframe width="700" height="300" src={this.state.chalkSrc} frameBorder="0" allowFullScreen>MODAL
+              </iframe>
+            </Modal>
+          </span>
+
+          <span onClick={this.onHarnessClick}>
+            <Modal
+              header='Climbing Harnesses'
+              trigger={
+                <Button className='modal-button' waves='light'>Harness</Button>
+              }>
+              <iframe width="700" height="300" src={this.state.harnessSrc} frameBorder="0" allowFullScreen>MODAL
+              </iframe>
+            </Modal>
+          </span>
+
         </div>
       </div>
     );
